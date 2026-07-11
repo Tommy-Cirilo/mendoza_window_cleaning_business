@@ -396,6 +396,9 @@ p {
   color: rgb(255 255 255 / 88%);
 }
 
+.hero--home {
+  background-image: url("../images/hero/home-hero.webp");
+}
 
 /* ==================================================
    8. Buttons
