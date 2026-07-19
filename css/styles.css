@@ -1025,10 +1025,12 @@ textarea.form-control {
 }
 
 .site-footer__logo {
-  width: auto;
-  max-width: 14rem;
-  max-height: 4rem;
-  margin-bottom: var(--space-4);
+  display: block;
+  width: 14rem;
+  height: 4rem;
+  object-fit: cover;
+  object-position: center;
+  background-color: var(--color-primary-dark);
 }
 
 .footer-links {
