@@ -1218,3 +1218,159 @@ textarea.form-control {
     text-decoration: underline;
   }
 }
+
+/* ==================================================
+   Business Network
+   ================================================== */
+
+.business-network {
+    position: relative;
+    padding-block: clamp(4rem, 8vw, 6rem);
+    overflow: hidden;
+    background:
+        linear-gradient(
+            rgb(238 247 252 / 92%),
+            rgb(238 247 252 / 92%)
+        ),
+        linear-gradient(
+            30deg,
+            transparent 40%,
+            rgb(99 185 230 / 12%) 40%,
+            rgb(99 185 230 / 12%) 42%,
+            transparent 42%,
+            transparent 58%,
+            rgb(99 185 230 / 12%) 58%,
+            rgb(99 185 230 / 12%) 60%,
+            transparent 60%
+        );
+    background-size: auto, 8rem 14rem;
+}
+
+.business-network__header {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2.75rem;
+}
+
+.business-network__header h2 {
+    max-width: 48rem;
+    margin-inline: auto;
+    color: var(--color-primary-dark);
+}
+
+.business-network__diagram {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(0.75rem, 2vw, 2rem);
+    max-width: 68rem;
+    margin-inline: auto;
+}
+
+.business-network__line {
+    position: absolute;
+    z-index: -1;
+    top: 4.25rem;
+    right: 8%;
+    left: 8%;
+    height: 0.125rem;
+    background-color: rgb(99 185 230 / 65%);
+}
+
+.network-partner {
+    min-width: 0;
+    text-align: center;
+}
+
+.network-partner__mark {
+    display: grid;
+    width: clamp(5.5rem, 9vw, 7.5rem);
+    aspect-ratio: 1;
+    margin-inline: auto;
+    place-items: center;
+    border: 0.1875rem solid currentcolor;
+    border-radius: 50%;
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: 0 0.75rem 1.75rem rgb(9 47 80 / 14%);
+}
+
+.network-partner__mark span {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.network-partner__mark--brand {
+    width: clamp(8rem, 13vw, 11rem);
+    padding: 1rem;
+    border-width: 0.25rem;
+}
+
+.network-partner__mark--brand img {
+    width: 100%;
+    height: auto;
+}
+
+.network-partner p {
+    margin: 1rem 0 0;
+    color: var(--color-primary-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.network-partner--gold {
+    color: #a77510;
+}
+
+.network-partner--green {
+    color: #347b35;
+}
+
+.network-partner--primary {
+    color: var(--color-primary);
+}
+
+.network-partner--cyan {
+    color: #1487a8;
+}
+
+.network-partner--orange {
+    color: #c65c18;
+}
+
+.business-network__summary {
+    position: relative;
+    z-index: 1;
+    margin: 2.5rem auto 0;
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+}
+
+/* ==================================================
+   Business Network: Mobile
+   ================================================== */
+
+@media (max-width: 47.99875rem) {
+    .business-network__diagram {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem 1rem;
+    }
+
+    .business-network__line {
+        display: none;
+    }
+
+    .network-partner--primary {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .network-partner__mark,
+    .network-partner__mark--brand {
+        width: 7rem;
+    }
+}
