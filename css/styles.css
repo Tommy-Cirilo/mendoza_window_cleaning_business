@@ -1220,157 +1220,166 @@ textarea.form-control {
 }
 
 /* ==================================================
-   Business Network
+   Partner Banner
    ================================================== */
 
-.business-network {
+.partner-banner {
     position: relative;
-    padding-block: clamp(4rem, 8vw, 6rem);
+    isolation: isolate;
+    padding-block: clamp(4.5rem, 8vw, 6.5rem);
     overflow: hidden;
-    background:
-        linear-gradient(
-            rgb(238 247 252 / 92%),
-            rgb(238 247 252 / 92%)
-        ),
-        linear-gradient(
-            30deg,
-            transparent 40%,
-            rgb(99 185 230 / 12%) 40%,
-            rgb(99 185 230 / 12%) 42%,
-            transparent 42%,
-            transparent 58%,
-            rgb(99 185 230 / 12%) 58%,
-            rgb(99 185 230 / 12%) 60%,
-            transparent 60%
-        );
-    background-size: auto, 8rem 14rem;
+    color: var(--color-white);
+    background-image:
+        url("../images/services/commercial_building.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
-.business-network__header {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 2.75rem;
-}
-
-.business-network__header h2 {
-    max-width: 48rem;
-    margin-inline: auto;
-    color: var(--color-primary-dark);
-}
-
-.business-network__diagram {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    align-items: center;
-    gap: clamp(0.75rem, 2vw, 2rem);
-    max-width: 68rem;
-    margin-inline: auto;
-}
-
-.business-network__line {
+.partner-banner__overlay {
     position: absolute;
     z-index: -1;
-    top: 4.25rem;
-    right: 8%;
-    left: 8%;
-    height: 0.125rem;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgb(2 33 72 / 94%),
+            rgb(2 33 72 / 88%),
+            rgb(10 62 103 / 84%)
+        );
+}
+
+.partner-banner__content {
+    position: relative;
+    z-index: 1;
+}
+
+.partner-banner__header {
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.partner-banner__header .section-eyebrow {
+    margin-bottom: 0.75rem;
+}
+
+.partner-banner__header h2 {
+    max-width: 55rem;
+    margin-inline: auto;
+    margin-bottom: 0;
+    color: var(--color-white);
+}
+
+.partner-banner__logos {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+    align-items: center;
+    max-width: 72rem;
+    margin-inline: auto;
+}
+
+.partner-banner__logo {
+    display: flex;
+    min-width: 0;
+    min-height: 7rem;
+    align-items: center;
+    justify-content: center;
+    padding-inline: clamp(1rem, 2.5vw, 2rem);
+}
+
+.partner-banner__logo img {
+    width: auto;
+    max-width: 100%;
+    max-height: 5.5rem;
+    object-fit: contain;
+
+    /*
+     * Converts the supplied logos to a consistent white
+     * appearance and visually removes their white backgrounds.
+     */
+    filter:
+        invert(1)
+        grayscale(1)
+        brightness(2);
+
+    mix-blend-mode: screen;
+}
+
+.partner-banner__logo:nth-of-type(5) img {
+    max-height: 6.5rem;
+}
+
+.partner-banner__divider {
+    width: 0.0625rem;
+    height: 5rem;
     background-color: rgb(99 185 230 / 65%);
 }
 
-.network-partner {
-    min-width: 0;
-    text-align: center;
-}
-
-.network-partner__mark {
-    display: grid;
-    width: clamp(5.5rem, 9vw, 7.5rem);
-    aspect-ratio: 1;
-    margin-inline: auto;
-    place-items: center;
-    border: 0.1875rem solid currentcolor;
-    border-radius: 50%;
-    color: var(--color-primary);
-    background-color: var(--color-white);
-    box-shadow: 0 0.75rem 1.75rem rgb(9 47 80 / 14%);
-}
-
-.network-partner__mark span {
-    font-size: clamp(1.25rem, 2vw, 1.75rem);
-    font-weight: 800;
-    letter-spacing: 0.05em;
-}
-
-.network-partner__mark--brand {
-    width: clamp(8rem, 13vw, 11rem);
-    padding: 1rem;
-    border-width: 0.25rem;
-}
-
-.network-partner__mark--brand img {
-    width: 100%;
-    height: auto;
-}
-
-.network-partner p {
-    margin: 1rem 0 0;
-    color: var(--color-primary-dark);
-    font-size: 0.9rem;
-    font-weight: 700;
-    line-height: 1.35;
-}
-
-.network-partner--gold {
-    color: #a77510;
-}
-
-.network-partner--green {
-    color: #347b35;
-}
-
-.network-partner--primary {
-    color: var(--color-primary);
-}
-
-.network-partner--cyan {
-    color: #1487a8;
-}
-
-.network-partner--orange {
-    color: #c65c18;
-}
-
-.business-network__summary {
-    position: relative;
-    z-index: 1;
-    margin: 2.5rem auto 0;
-    color: var(--color-text-muted);
+.partner-banner__description {
+    max-width: 50rem;
+    margin: clamp(2.5rem, 5vw, 4rem) auto 0;
+    color: rgb(255 255 255 / 88%);
     font-size: 1.05rem;
 }
 
 /* ==================================================
-   Business Network: Mobile
+   Partner Banner: Tablet and Mobile
    ================================================== */
 
-@media (max-width: 47.99875rem) {
-    .business-network__diagram {
+@media (max-width: 61.99875rem) {
+    .partner-banner__logos {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 2rem 1rem;
     }
 
-    .business-network__line {
+    .partner-banner__divider {
         display: none;
     }
 
-    .network-partner--primary {
-        grid-column: 1 / -1;
-        grid-row: 1;
+    .partner-banner__logo {
+        min-height: 8rem;
+        padding: 1.5rem;
     }
 
-    .network-partner__mark,
-    .network-partner__mark--brand {
-        width: 7rem;
+    .partner-banner__logo:nth-of-type(1),
+    .partner-banner__logo:nth-of-type(3) {
+        border-right: 0.0625rem solid
+            rgb(99 185 230 / 45%);
+    }
+
+    .partner-banner__logo:nth-of-type(1),
+    .partner-banner__logo:nth-of-type(2) {
+        border-bottom: 0.0625rem solid
+            rgb(99 185 230 / 45%);
+    }
+}
+
+@media (max-width: 35.99875rem) {
+    .partner-banner {
+        padding-block: 4rem;
+    }
+
+    .partner-banner__logos {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-banner__logo {
+        min-height: 7.5rem;
+        border-right: 0 !important;
+        border-bottom: 0.0625rem solid
+            rgb(99 185 230 / 40%);
+    }
+
+    .partner-banner__logo:last-of-type {
+        border-bottom: 0;
+    }
+
+    .partner-banner__logo img {
+        max-width: 15rem;
+        max-height: 5rem;
     }
 }
