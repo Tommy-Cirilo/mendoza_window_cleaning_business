@@ -9,13 +9,13 @@
   --color-primary-dark: #022148;
 
   /* Main brand blue */
-  --color-primary: #1E5D93;
+  --color-primary: #1e5d93;
 
   /* Accent blue for buttons */
-  --color-primary-light: #63B9E6;
+  --color-primary-light: #63b9e6;
 
   /* Very light background */
-  --color-primary-soft: #EEF7FC;
+  --color-primary-soft: #eef7fc;
 
   /* ===== Neutrals ===== */
 
@@ -32,11 +32,7 @@
   --color-focus: #f5c84b;
 
   --font-family-base:
-    system-ui,
-    -apple-system,
-    blinkmacsystemfont,
-    "Segoe UI",
-    sans-serif;
+    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
 
   --content-width: 75rem;
   --content-width-narrow: 48rem;
@@ -63,7 +59,6 @@
   --transition-fast: 150ms ease;
   --transition-standard: 250ms ease;
 }
-
 
 /* ==================================================
    2. Global Styles
@@ -120,7 +115,6 @@ main {
   overflow: hidden;
 }
 
-
 /* ==================================================
    3. Typography
    ================================================== */
@@ -176,7 +170,6 @@ p {
   text-transform: uppercase;
 }
 
-
 /* ==================================================
    4. Accessibility
    ================================================== */
@@ -210,7 +203,6 @@ p {
 .required-indicator {
   color: var(--color-error);
 }
-
 
 /* ==================================================
    5. Shared Layout
@@ -260,7 +252,6 @@ p {
 .content-centered {
   margin-inline: auto;
 }
-
 
 /* ==================================================
    6. Header and Navigation
@@ -438,7 +429,6 @@ p {
   box-shadow: 0 0 0 0.2rem rgb(99 185 230 / 35%);
 }
 
-
 /* ==================================================
    7. Hero Sections
    ================================================== */
@@ -461,11 +451,7 @@ p {
   inset: 0;
   content: "";
   background:
-    radial-gradient(
-      circle at top right,
-      rgb(28 89 138 / 18%),
-      transparent 40%
-    ),
+    radial-gradient(circle at top right, rgb(28 89 138 / 18%), transparent 40%),
     linear-gradient(
       90deg,
       rgb(5 25 44 / 82%) 0%,
@@ -499,13 +485,7 @@ p {
   padding-block: clamp(4.5rem, 10vw, 7rem);
   overflow: hidden;
   color: var(--color-white);
-    background:
-        linear-gradient(
-            135deg,
-            #071C35 0%,
-            #0A2747 55%,
-            #12426D 100%
-        );
+  background: linear-gradient(135deg, #071c35 0%, #0a2747 55%, #12426d 100%);
 }
 
 .page-hero h1 {
@@ -592,7 +572,6 @@ p {
   border-color: var(--color-white);
 }
 
-
 /* ==================================================
    9. Cards
    ================================================== */
@@ -648,7 +627,6 @@ p {
   height: 1.75rem;
 }
 
-
 /* ==================================================
    10. Service Detail Sections
    ================================================== */
@@ -691,7 +669,6 @@ p {
   content: "✓";
   font-weight: 800;
 }
-
 
 /* ==================================================
    11. Showcase Gallery
@@ -745,12 +722,7 @@ p {
   left: 0;
   padding: var(--space-4);
   color: var(--color-white);
-  background:
-    linear-gradient(
-      0deg,
-      rgb(5 32 55 / 92%),
-      rgb(5 32 55 / 0%)
-    );
+  background: linear-gradient(0deg, rgb(5 32 55 / 92%), rgb(5 32 55 / 0%));
 }
 
 .gallery-card__content h2,
@@ -763,7 +735,6 @@ p {
   margin: 0;
   color: rgb(255 255 255 / 88%);
 }
-
 
 /* ==================================================
    12. About Page
@@ -798,7 +769,6 @@ p {
   color: var(--color-text-muted);
   font-weight: 600;
 }
-
 
 /* ==================================================
    13. Contact Page and Forms
@@ -891,7 +861,6 @@ textarea.form-control {
   border: 0.0625rem solid rgb(163 33 33 / 35%);
 }
 
-
 /* ==================================================
    14. Call-to-Action Sections
    ================================================== */
@@ -902,13 +871,7 @@ textarea.form-control {
   overflow: hidden;
   isolation: isolate;
   color: var(--color-white);
-    background:
-        linear-gradient(
-            135deg,
-            #071C35,
-            #0A2747,
-            #12426D
-        );
+  background: linear-gradient(135deg, #071c35, #0a2747, #12426d);
 }
 
 .cta-section h2 {
@@ -918,7 +881,6 @@ textarea.form-control {
 .cta-section p {
   color: rgb(255 255 255 / 88%);
 }
-
 
 /* ==================================================
    15. Honeycomb Decorations
@@ -994,7 +956,6 @@ textarea.form-control {
   background-size: 2.5rem 4.3rem;
 }
 
-
 /* ==================================================
    16. Footer
    ================================================== */
@@ -1050,7 +1011,6 @@ textarea.form-control {
   margin: 0;
   font-size: 0.9rem;
 }
-
 
 /* ==================================================
    17. Responsive Adjustments
@@ -1145,12 +1105,7 @@ textarea.form-control {
   }
 
   .hero::before {
-    background:
-      linear-gradient(
-        90deg,
-        rgb(5 32 55 / 84%),
-        rgb(9 47 80 / 58%)
-      );
+    background: linear-gradient(90deg, rgb(5 32 55 / 84%), rgb(9 47 80 / 58%));
   }
 
   .hero-actions {
@@ -1166,7 +1121,6 @@ textarea.form-control {
     flex: 1 1 auto;
   }
 }
-
 
 /* ==================================================
    18. Reduced Motion
@@ -1193,7 +1147,6 @@ textarea.form-control {
     transform: none;
   }
 }
-
 
 /* ==================================================
    19. Print Styles
@@ -1224,107 +1177,102 @@ textarea.form-control {
    ================================================== */
 
 .partner-banner {
-    position: relative;
-    isolation: isolate;
-    padding-block: clamp(4.5rem, 8vw, 6.5rem);
-    overflow: hidden;
-    color: var(--color-white);
-    background-image:
-        url("../images/services/commercial_building.jpg");
-    background-position: center;
-    background-size: cover;
+  position: relative;
+  isolation: isolate;
+  padding-block: clamp(4.5rem, 8vw, 6.5rem);
+  overflow: hidden;
+  color: var(--color-white);
+  background-image: url("../images/services/commercial_building.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .partner-banner__overlay {
-    position: absolute;
-    z-index: -1;
-    inset: 0;
-    background:
-        linear-gradient(
-            90deg,
-            rgb(2 33 72 / 94%),
-            rgb(2 33 72 / 88%),
-            rgb(10 62 103 / 84%)
-        );
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(2 33 72 / 94%),
+    rgb(2 33 72 / 88%),
+    rgb(10 62 103 / 84%)
+  );
 }
 
 .partner-banner__content {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .partner-banner__header {
-    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 
 .partner-banner__header .section-eyebrow {
-    margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .partner-banner__header h2 {
-    max-width: 55rem;
-    margin-inline: auto;
-    margin-bottom: 0;
-    color: var(--color-white);
+  max-width: 55rem;
+  margin-inline: auto;
+  margin-bottom: 0;
+  color: var(--color-white);
 }
 
 .partner-banner__logos {
-    display: grid;
-    grid-template-columns:
-        minmax(0, 1fr)
-        auto
-        minmax(0, 1fr)
-        auto
-        minmax(0, 1fr)
-        auto
-        minmax(0, 1fr);
-    align-items: center;
-    max-width: 72rem;
-    margin-inline: auto;
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
+  align-items: center;
+  max-width: 72rem;
+  margin-inline: auto;
 }
 
 .partner-banner__logo {
-    display: flex;
-    min-width: 0;
-    min-height: 7rem;
-    align-items: center;
-    justify-content: center;
-    padding-inline: clamp(1rem, 2.5vw, 2rem);
+  display: flex;
+  min-width: 0;
+  min-height: 7rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: clamp(1rem, 2.5vw, 2rem);
 }
 
 .partner-banner__logo img {
-    width: auto;
-    max-width: 100%;
-    max-height: 5.5rem;
-    object-fit: contain;
+  width: auto;
+  max-width: 100%;
+  max-height: 5.5rem;
+  object-fit: contain;
 
-    /*
+  /*
      * Converts the supplied logos to a consistent white
      * appearance and visually removes their white backgrounds.
      */
-    filter:
-        invert(1)
-        grayscale(1)
-        brightness(2);
+  filter: invert(1) grayscale(1) brightness(2);
 
-    mix-blend-mode: screen;
+  mix-blend-mode: screen;
 }
 
 .partner-banner__logo:nth-of-type(5) img {
-    max-height: 6.5rem;
+  max-height: 6.5rem;
 }
 
 .partner-banner__divider {
-    width: 0.0625rem;
-    height: 5rem;
-    background-color: rgb(99 185 230 / 65%);
+  width: 0.0625rem;
+  height: 5rem;
+  background-color: rgb(99 185 230 / 65%);
 }
 
 .partner-banner__description {
-    max-width: 50rem;
-    margin: clamp(2.5rem, 5vw, 4rem) auto 0;
-    color: rgb(255 255 255 / 88%);
-    font-size: 1.05rem;
+  max-width: 50rem;
+  margin: clamp(2.5rem, 5vw, 4rem) auto 0;
+  color: rgb(255 255 255 / 88%);
+  font-size: 1.05rem;
 }
 
 /* ==================================================
@@ -1332,54 +1280,127 @@ textarea.form-control {
    ================================================== */
 
 @media (max-width: 61.99875rem) {
-    .partner-banner__logos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .partner-banner__logos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .partner-banner__divider {
-        display: none;
-    }
+  .partner-banner__divider {
+    display: none;
+  }
 
-    .partner-banner__logo {
-        min-height: 8rem;
-        padding: 1.5rem;
-    }
+  .partner-banner__logo {
+    min-height: 8rem;
+    padding: 1.5rem;
+  }
 
-    .partner-banner__logo:nth-of-type(1),
-    .partner-banner__logo:nth-of-type(3) {
-        border-right: 0.0625rem solid
-            rgb(99 185 230 / 45%);
-    }
+  .partner-banner__logo:nth-of-type(1),
+  .partner-banner__logo:nth-of-type(3) {
+    border-right: 0.0625rem solid rgb(99 185 230 / 45%);
+  }
 
-    .partner-banner__logo:nth-of-type(1),
-    .partner-banner__logo:nth-of-type(2) {
-        border-bottom: 0.0625rem solid
-            rgb(99 185 230 / 45%);
-    }
+  .partner-banner__logo:nth-of-type(1),
+  .partner-banner__logo:nth-of-type(2) {
+    border-bottom: 0.0625rem solid rgb(99 185 230 / 45%);
+  }
 }
 
 @media (max-width: 35.99875rem) {
-    .partner-banner {
-        padding-block: 4rem;
-    }
+  .partner-banner {
+    padding-block: 4rem;
+  }
 
-    .partner-banner__logos {
-        grid-template-columns: 1fr;
-    }
+  .partner-banner__logos {
+    grid-template-columns: 1fr;
+  }
 
-    .partner-banner__logo {
-        min-height: 7.5rem;
-        border-right: 0 !important;
-        border-bottom: 0.0625rem solid
-            rgb(99 185 230 / 40%);
-    }
+  .partner-banner__logo {
+    min-height: 7.5rem;
+    border-right: 0 !important;
+    border-bottom: 0.0625rem solid rgb(99 185 230 / 40%);
+  }
 
-    .partner-banner__logo:last-of-type {
-        border-bottom: 0;
-    }
+  .partner-banner__logo:last-of-type {
+    border-bottom: 0;
+  }
 
-    .partner-banner__logo img {
-        max-width: 15rem;
-        max-height: 5rem;
-    }
+  .partner-banner__logo img {
+    max-width: 15rem;
+    max-height: 5rem;
+  }
+}
+
+/* ==================================================
+   Instagram Links and Showcase Callout
+   ================================================== */
+
+.instagram-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+}
+
+.contact-details__icon .instagram-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.footer-instagram {
+  margin-top: var(--space-4);
+}
+
+.footer-instagram a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.instagram-section {
+  padding-block: var(--space-5);
+}
+
+.instagram-callout {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-soft);
+  border: 0.0625rem solid var(--color-border);
+  border-radius: var(--radius-medium);
+}
+
+.instagram-callout > .instagram-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.instagram-callout__copy {
+  flex: 1;
+}
+
+.instagram-callout h2 {
+  margin-bottom: var(--space-1);
+}
+
+.instagram-callout p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.instagram-callout .btn {
+  flex: none;
+}
+
+@media (max-width: 47.999em) {
+  .instagram-callout {
+    flex-wrap: wrap;
+  }
+
+  .instagram-callout__copy {
+    flex-basis: calc(100% - 4.25rem);
+  }
+
+  .instagram-callout .btn {
+    margin-left: 4.25rem;
+  }
 }
